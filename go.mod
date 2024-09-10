@@ -1,3 +1,3 @@
-module github.com/inhies/go-bytesize
+module github.com/cloudsbit/go-bytesize
 
 go 1.12
