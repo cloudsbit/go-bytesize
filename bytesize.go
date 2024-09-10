@@ -25,14 +25,24 @@ import (
 type ByteSize uint64
 
 // Byte size size suffixes.
+//const (
+//	B  ByteSize = 1
+//	KB ByteSize = 1 << (10 * iota)
+//	MB
+//	GB
+//	TB
+//	PB
+//	EB
+//)
+
 const (
 	B  ByteSize = 1
-	KB ByteSize = 1 << (10 * iota)
-	MB
-	GB
-	TB
-	PB
-	EB
+	KB          = B * 1000
+	MB          = KB * 1000
+	GB          = MB * 1000
+	TB          = GB * 1000
+	PB          = TB * 1000
+	EB          = PB * 1000
 )
 
 // Used for returning long unit form of string representation.
